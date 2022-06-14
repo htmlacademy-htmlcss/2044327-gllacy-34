@@ -1,0 +1,40 @@
+.blog {
+    background-image: url(/images/news.jpg);
+    width: 570px;
+    height: 224px;
+}
+.news-subscription {
+    background-image: url(/images/subscribe.png);
+    width: 570px;
+    height: 224px;
+}
+.news-background {
+    background-color: #fff;
+    width: 558px;
+    height: 212px;
+}
+.delivery {
+    background-image: url(/images/delivery.jpg);
+    width: 1170px;
+    height: 534px;
+}
+.feedback {
+    background-color: #fff;
+    width: 500px;
+    height: 406px;
+}
+.contacts {
+    background-image: url(/images/feedback.jpg);
+    width: 1170px;
+    height: 492px;
+}
+.contacts-form {
+    background-color: #fff;
+    width: 343px;
+    height: 364px;
+}
+.banners-item {
+    background-color: FCFCFC;
+    width: 570px;
+    height: 268px;
+}
