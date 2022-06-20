@@ -1,0 +1,111 @@
+ul {
+    list-style-type: none;
+}
+
+.header-search {
+    background: url(../images/search.svg) no-repeat;
+}
+.header-login {
+    background: url(../images/login.svg) no-repeat;
+}
+.header-cart {
+    background: url(../images/cart.svg) no-repeat;
+}
+.slider-prev {
+    background: url(../images/arrow-left.svg) no-repeat;
+}
+.slider-next {
+    background: url(../images/arrow-right.svg) no-repeat;
+}
+.social-telegram {
+    background: url(../images/telegram.svg) no-repeat;
+}
+.social-vk {
+    background: url(../images/vk.svg) no-repeat;
+}
+.social-youtube {
+    background: url(../images/youtube.svg) no-repeat;
+}
+.promo-raspberry, .promo-marshmallow {
+    background-color: #FF7799;
+    width: 570px;
+    height: 268px;
+}
+.button-cart {
+    background: url(../images/cart.svg) no-repeat;
+}
+.about-company-container {
+    background: url(../images/waffle.jpg) no-repeat;
+    width: 1170px;
+    height: 480px;
+    padding: 24px;
+}
+.about-comrany-text {
+    background-color: #fff;
+    width: 1122px;
+    height: 432px;
+}
+.ice-cream {
+    background: url(../images/ice-cream.svg) no-repeat;
+}
+.cow {
+    background: url(../images/cow.svg) no-repeat;
+}
+.leaf {
+    background: url(../images/leaf.svg) no-repeat;
+}
+.thermometer {
+    background: url(../images/thermometer.svg) no-repeat;
+}
+.blog {
+    background-image: url(../images/news.jpg);
+    width: 570px;
+    height: 224px;
+}
+.news-subscription {
+    background-image: url(../images/subscribe.jpg);
+    width: 570px;
+    height: 224px;
+}
+.news-background {
+    background-color: #fff;
+    width: 558px;
+    height: 212px;
+}
+.delivery {
+    background-image: url(/images/delivery.jpg);
+    width: 1170px;
+    height: 534px;
+}
+.feedback {
+    background-color: #fff;
+    width: 500px;
+    height: 406px;
+}
+.contacts {
+    background-image: url(/images/feedback.jpg);
+    width: 1170px;
+    height: 492px;
+}
+.contacts-form {
+    background-color: #fff;
+    width: 343px;
+    height: 364px;
+}
+.banners-item {
+    background-color: FCFCFC;
+    width: 570px;
+    height: 268px;
+}
+.footer-menu-item-first {
+    background: url(../images/heart-fill.svg) no-repeat;
+}
+/*.footer-copyright-logo {
+    background: url(../images/logo-htmlacademy.svg) no-repeat;
+}*/
+.info {
+    background: url(../images/info.svg) no-repeat;
+}
+.check-on {
+    background: url(../images/cross.svg) no-repeat;
+}
