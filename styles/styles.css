@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight:900;
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #FEAFC3;
+  }
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #2D3440;
+    font-size: 14px;
+    line-height: 20px;
+}
+.visually-hidden {
+    visibility: hidden;
+}
+.header-phone {
+    font-weight: 700;
+}
+.slider-gallery-name {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+}
+.slider-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 12px 32px;
+    background-color: #FCFCFC;
+    border: 4px solid #FFCBD8;
+    border-radius: 26px;
+}
+/*.slider-button {
+    border: 2px solid #FCFCFC;
+    border-radius: 26px;
+}*/
+.promo-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+.banner-name {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.products-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+.products-item {
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    width: 270px;
+}
+.products-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.products-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #565C66;
+}
+.products-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.about-company-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+.about-company-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+.blog-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+.blog-description {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.news-subscription-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+.delivery-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+.delivery-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+.feedback-text {
+    color: #565C66;
+}
+.feedback-form-date {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+/*#feedback-date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
+}*/
+.contacts-address-text, .contacts-phone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.contacts-text-bottom {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-menu-link {
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-menu-list-first {
+    font-weight: 700;
+}
+.footer-copyright-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.button-send, .button-feedback {
+    background: #FF2F64;
+    border: 4px solid #ffcbd8;
+    /*box-shadow: 0px 4px 12px rgb(45 52 64 / 10%);*/
+    border-radius: 26px;
+    color: #FCFCFC;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 12px 32px;
+}
+
+.header-search {
+    background: url(../images/search.svg) no-repeat;
+}
+.header-login {
+    background: url(../images/login.svg) no-repeat;
+}
+.header-cart {
+    background: url(../images/cart.svg) no-repeat;
+}
+.slider-prev {
+    background: url(../images/arrow-left.svg) no-repeat;
+}
+.slider-next {
+    background: url(../images/arrow-right.svg) no-repeat;
+}
+.social-telegram {
+    background: url(../images/telegram.svg) no-repeat;
+}
+.social-vk {
+    background: url(../images/vk.svg) no-repeat;
+}
+.social-youtube {
+    background: url(../images/youtube.svg) no-repeat;
+}
+.promo-raspberry, .promo-marshmallow {
+    background-color: #FF7799;
+    width: 570px;
+    height: 268px;
+    border-radius: 16px;
+}
+.button-cart {
+    background: url(../images/cart.svg) no-repeat;
+    background-color: #FF2F64;
+    border-radius: 36px;
+}
+.about-company-container {
+    background: url(../images/waffle.jpg) no-repeat;
+    width: 1170px;
+    height: 480px;
+    padding: 24px;
+}
+.about-comrany-text {
+    background-color: #fff;
+    width: 1122px;
+    height: 432px;
+}
+.ice-cream {
+    background: url(../images/ice-cream.svg) no-repeat;
+}
+.cow {
+    background: url(../images/cow.svg) no-repeat;
+}
+.leaf {
+    background: url(../images/leaf.svg) no-repeat;
+}
+.thermometer {
+    background: url(../images/thermometer.svg) no-repeat;
+}
+.blog {
+    background-image: url(../images/news.jpg);
+    width: 570px;
+    height: 224px;
+}
+.news-subscription {
+    background-image: url(../images/subscribe.jpg);
+    width: 570px;
+    height: 224px;
+}
+.news-background {
+    background-color: #fff;
+    width: 558px;
+    height: 212px;
+}
+.delivery {
+    background-image: url(/images/delivery.jpg);
+    width: 1170px;
+    height: 534px;
+}
+.feedback {
+    background-color: #fff;
+    width: 500px;
+    height: 406px;
+}
+.contacts {
+    background-image: url(/images/feedback.jpg);
+    width: 1170px;
+    height: 492px;
+}
+.contacts-form {
+    background-color: #fff;
+    width: 343px;
+    height: 364px;
+}
+.banners-item {
+    background-color: FCFCFC;
+    width: 570px;
+    height: 268px;
+}
+.footer-menu-item-first {
+    background: url(../images/heart-fill.svg) no-repeat;
+}
+/*.footer-copyright-logo {
+    background: url(../images/logo-htmlacademy.svg) no-repeat;
+}*/
+.info {
+    background: url(../images/info.svg) no-repeat;
+}
+.check-on {
+    background: url(../images/cross.svg) no-repeat;
+}
