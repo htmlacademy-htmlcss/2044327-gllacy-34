@@ -259,7 +259,7 @@ a {
     width: 1170px;
     padding: 24px;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     margin: auto;
     border-radius: 16px;
 }
@@ -311,7 +311,7 @@ a {
     width: 1170px;
     height: 534px;
     background-size: contain;
-    background-position: center;
+    background-position: center center;
     border-radius: 16px;
 }
 .feedback {
@@ -326,7 +326,7 @@ a {
     width: 1170px;
     height: 492px;
     background-size: contain;
-    background-position: center;
+    background-position: center center;
     border-radius: 16px;
 }
 .contacts-form {
