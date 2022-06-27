@@ -243,7 +243,7 @@ a {
 .promo-raspberry, .promo-marshmallow {
     background-color: #FF7799;
     width: 570px;
-    height: 268px;
+    /*height: 268px;*/
     border-radius: 16px;
 }
 .button-products-cart {
@@ -257,13 +257,19 @@ a {
 .about-company-container {
     background: url(../images/waffle.jpg) no-repeat;
     width: 1170px;
-    height: 480px;
     padding: 24px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    border-radius: 16px;
 }
 .about-comrany-text {
     background-color: #fff;
     width: 1122px;
-    height: 432px;
+    padding: 24px;
+    /*background-size: cover;
+    background-position: center;*/
+    border-radius: 16px;
 }
 .ice-cream {
     background: url(../images/ice-cream.svg) no-repeat;
@@ -281,36 +287,53 @@ a {
     background-image: url(../images/news.jpg);
     width: 570px;
     height: 224px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    margin-bottom: 20px;
 }
 .news-subscription {
     background-image: url(../images/subscribe.jpg);
-    width: 570px;
-    height: 224px;
+    padding: 6px;
+    width: 558px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
 }
 .news-background {
     background-color: #fff;
-    width: 558px;
-    height: 212px;
+    width: 546px;
+    border-radius: 16px;
+    padding: 6px;
 }
 .delivery {
-    background-image: url(/images/delivery.jpg);
+    background: url(/images/delivery.jpg) no-repeat;
     width: 1170px;
     height: 534px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 16px;
 }
 .feedback {
     background-color: #fff;
     width: 500px;
-    height: 406px;
+    /*background-size: contain;
+    background-position: right center;*/
+    border-radius: 16px;
 }
 .contacts {
-    background-image: url(/images/feedback.jpg);
+    background: url(/images/feedback.jpg) no-repeat;
     width: 1170px;
     height: 492px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 16px;
 }
 .contacts-form {
     background-color: #fff;
     width: 343px;
     height: 364px;
+    border-radius: 16px;
 }
 .banners-item {
     background-color: FCFCFC;
