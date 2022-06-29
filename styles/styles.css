@@ -166,21 +166,11 @@ a {
     line-height: 22px;
     color: #565C66;
 }
-/*.feedback-text {
-    color: #565C66;
-}*/
 .feedback-form-date {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
 }
-
-/*#feedback-date {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #B9B9B9;
-}*/
 .contacts-address-text, .contacts-phone {
     font-weight: 700;
     font-size: 20px;
@@ -256,19 +246,19 @@ a {
 }
 .about-company-container {
     background: url(../images/waffle.jpg) no-repeat;
-    width: 1170px;
     padding: 24px;
     background-size: cover;
     background-position: center center;
     margin: auto;
     border-radius: 16px;
+    width: 1170px;
+    height: 480px;
 }
 .about-comrany-text {
     background-color: #fff;
     width: 1122px;
+    height: 432px;
     padding: 24px;
-    /*background-size: cover;
-    background-position: center;*/
     border-radius: 16px;
 }
 .ice-cream {
@@ -284,50 +274,55 @@ a {
     background: url(../images/thermometer.svg) no-repeat;
 }
 .blog {
-    background-image: url(../images/news.jpg);
-    width: 570px;
-    height: 224px;
+    background: url(../images/news.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     border-radius: 16px;
     margin-bottom: 20px;
+    width: 570px;
+    height: 224px;
+
 }
 .news-subscription {
-    background-image: url(../images/subscribe.jpg);
+    background: url(../images/subscribe.jpg) no-repeat;
     padding: 6px;
-    width: 558px;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     border-radius: 16px;
+    width: 558px;
+    height: 224px;
 }
-.news-background {
+.news-subscription-content {
     background-color: #fff;
-    width: 546px;
     border-radius: 16px;
     padding: 6px;
+    /*width: 558px;*/
+    height: 212px;
+
 }
 .delivery {
     background: url(/images/delivery.jpg) no-repeat;
-    width: 1170px;
-    height: 534px;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     border-radius: 16px;
+    width: 1170px;
+    height: 534px;
+    margin: auto;
 }
+
 .feedback {
     background-color: #fff;
     width: 500px;
-    /*background-size: contain;
-    background-position: right center;*/
     border-radius: 16px;
 }
 .contacts {
     background: url(/images/feedback.jpg) no-repeat;
-    width: 1170px;
-    height: 492px;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     border-radius: 16px;
+    width: 1170px;
+    height: 492px;
+    margin: auto;
 }
 .contacts-form {
     background-color: #fff;
