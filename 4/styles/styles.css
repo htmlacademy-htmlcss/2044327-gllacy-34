@@ -166,21 +166,11 @@ a {
     line-height: 22px;
     color: #565C66;
 }
-/*.feedback-text {
-    color: #565C66;
-}*/
 .feedback-form-date {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
 }
-
-/*#feedback-date {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #B9B9B9;
-}*/
 .contacts-address-text, .contacts-phone {
     font-weight: 700;
     font-size: 20px;
@@ -243,7 +233,7 @@ a {
 .promo-raspberry, .promo-marshmallow {
     background-color: #FF7799;
     width: 570px;
-    height: 268px;
+    /*height: 268px;*/
     border-radius: 16px;
 }
 .button-products-cart {
@@ -256,14 +246,20 @@ a {
 }
 .about-company-container {
     background: url(../images/waffle.jpg) no-repeat;
+    padding: 24px;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    border-radius: 16px;
     width: 1170px;
     height: 480px;
-    padding: 24px;
 }
 .about-comrany-text {
     background-color: #fff;
     width: 1122px;
     height: 432px;
+    padding: 24px;
+    border-radius: 16px;
 }
 .ice-cream {
     background: url(../images/ice-cream.svg) no-repeat;
@@ -278,39 +274,61 @@ a {
     background: url(../images/thermometer.svg) no-repeat;
 }
 .blog {
-    background-image: url(../images/news.jpg);
+    background: url(../images/news.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 16px;
+    margin-bottom: 20px;
     width: 570px;
     height: 224px;
+
 }
 .news-subscription {
-    background-image: url(../images/subscribe.jpg);
-    width: 570px;
+    background: url(../images/subscribe.jpg) no-repeat;
+    padding: 6px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 16px;
+    width: 558px;
     height: 224px;
 }
-.news-background {
+.news-subscription-content {
     background-color: #fff;
-    width: 558px;
+    border-radius: 16px;
+    padding: 6px;
+    /*width: 558px;*/
     height: 212px;
+
 }
 .delivery {
-    background-image: url(/images/delivery.jpg);
+    background: url(/images/delivery.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 16px;
     width: 1170px;
     height: 534px;
+    margin: auto;
 }
+
 .feedback {
     background-color: #fff;
     width: 500px;
-    height: 406px;
+    border-radius: 16px;
 }
 .contacts {
-    background-image: url(/images/feedback.jpg);
+    background: url(/images/feedback.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 16px;
     width: 1170px;
     height: 492px;
+    margin: auto;
 }
 .contacts-form {
     background-color: #fff;
     width: 343px;
     height: 364px;
+    border-radius: 16px;
 }
 .banners-item {
     background-color: FCFCFC;
