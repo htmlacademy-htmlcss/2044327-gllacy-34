@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" alt="Логотип Глейси" src="images/logo.svg" width="137" height="56">
         </a>
+      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-item-catalog">
             <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
@@ -141,7 +141,7 @@
                     </fieldset>
                     <button class="button button-filter" type="submit">Применить</button>
             </form>
-
+            <div class="products-page">
             <ul class="products-list">
               <li class="products-item">
                   <div class="products-item-image">
@@ -350,6 +350,7 @@
                 </div>
               </li>
             </ul>
+            </div>
             <button class="button pagination-show-more" type="button">Показать ещё</button>
             <ul class="pagination">
                 <li class="pagination-item">
@@ -378,11 +379,13 @@
                   </a>
                 </li>
               </ul>
+              </div>
         </section>
 
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
+      <div class="container">
+      <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -404,39 +407,41 @@
             </a>
           </li>
         </ul>
-      </section>
-        <section class="footer-menu">
-          <ul class="footer-menu-list">
-            <li class="footer-menu-item footer-menu-item-first">
-              <!-- <img src="images/heart.svg" alt="Сердечко" width="16" height="16"> -->
-              <a class="footer-menu-link" href="#">
-                <p class="footer-menu-list-first">Для поставщиков</p>
-              </a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#">
-                О производстве
-              </a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#">
-                Наши документы
-              </a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#">
-                Экологические стандарты
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-copyright">
-          <h2 class="visually-hidden">Копирайт</h2>
-          <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
-            <img class="footer-copyright-logo" alt="Логотип Академии" src="images/logo-htmlacademy.svg" width="93" height="27">
-          </a>
-          <p class="footer-copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-        </section>
-      </footer>
+      </div>
+      <div class="footer-menu">
+        <h2 class="visually-hidden">О нас</h2>
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item footer-menu-item-first">
+            <!-- <img src="images/heart.svg" alt="Сердечко" width="16" height="16"> -->
+            <a class="footer-menu-link" href="#">
+              <p class="footer-menu-list-first">Для поставщиков</p>
+            </a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">
+              О производстве
+            </a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">
+              Наши документы
+            </a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">
+              Экологические стандарты
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
+          <img class="footer-copyright-logo" alt="Логотип Академии" src="images/logo-htmlacademy.svg" width="93" height="27">
+        </a>
+        <p class="footer-copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+      </div>
+      </div>
+    </footer>
     </body>
   </html>

@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип Глейси" src="images/logo.svg" width="137" height="56">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип Глейси" src="images/logo.svg" width="137" height="56">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -121,6 +121,7 @@
       </section>
       <section class="promo">
         <h2 class="promo-title">Заказывайте мороженое и получайте подарки!</h2>
+        <div class="promo-banners">
           <div class="promo-raspberry">
             <div class="banner-text promo-raspberry-text">
               <h3 class="banner-name promo-raspberry-name">Малинка даром!</h3>
@@ -141,9 +142,11 @@
               <img class="promo-image" src="images/marshmallow.png" alt="Малинка даром" width="219" height="268">
             </div>
           </div>
+        </div>
       </section>
       <section class="products">
         <h2 class="products-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <div class="products-page">
         <ul class="products-list">
           <li class="products-item">
               <div class="products-item-image">
@@ -214,6 +217,7 @@
             </div>
           </li>
         </ul>
+        </div>
       </section>
         <div class="about-company-container">
           <div class="about-comrany-text">
@@ -286,7 +290,8 @@
       </div>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
+      <div class="container">
+      <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -308,8 +313,8 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-menu">
+      </div>
+      <div class="footer-menu">
         <h2 class="visually-hidden">О нас</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item footer-menu-item-first">
@@ -334,14 +339,15 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-copyright">
+      </div>
+      <div class="footer-copyright">
         <h2 class="visually-hidden">Копирайт</h2>
         <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
           <img class="footer-copyright-logo" alt="Логотип Академии" src="images/logo-htmlacademy.svg" width="93" height="27">
         </a>
         <p class="footer-copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-      </section>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
