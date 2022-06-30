@@ -301,7 +301,7 @@ a {
 
 }
 .delivery {
-    background: url(/images/delivery.jpg) no-repeat;
+    background: url(../images/delivery.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
@@ -316,7 +316,7 @@ a {
     border-radius: 16px;
 }
 .contacts {
-    background: url(/images/feedback.jpg) no-repeat;
+    background: url(../images/feedback.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
