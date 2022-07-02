@@ -24,7 +24,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     background-color: #FEAFC3;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -248,6 +248,7 @@ a {
     width: 32px;
     padding: 8px;
     height: 32px;
+    justify-content: center;
 }
 .about-company-container {
     background: url(../images/waffle.jpg) no-repeat;
@@ -437,7 +438,7 @@ a {
 .products-list {
     flex-wrap: wrap;
 }
-.container {
+.page-footer-container {
     /*width: 1170px;*/
     margin: 0 auto;
     display: flex;
@@ -493,7 +494,7 @@ html {
 }
 .logo {
     max-width: 137px;
-    margin-right: auto;
+    margin-right: 16px;
 }
 .navigation-item-catalog {
     width: 95px;
@@ -516,4 +517,9 @@ html {
 }
 .pagination {
     display: flex;
+}
+.breadcrumbs {
+    display: flex;
+    width: 143px;
+    padding: 0;
 }
