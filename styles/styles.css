@@ -567,3 +567,28 @@ html {
 .navigation-link-active {
     color: #FCFCFC;
 }
+.catalog-filter-list {
+    display: flex;
+}
+.about-company-list {
+    display: flex;
+}
+.about-company-list {
+    display: flex;
+    width: 1042px;
+    padding-left: 40px;
+}
+.about-company-item {
+    width: 50%;
+}
+.about-company-description {
+    padding-right: 32px;
+}
+.slider-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.header-social-item, .footer-social-item {
+    padding-right: 16px;
+}
