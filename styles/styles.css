@@ -291,7 +291,7 @@ a {
     border-radius: 16px;
     width: 1122px;
     /*height: 432px;*/
-    margin-top: 44px;
+    margin-top: 80px;
 }
 .about-comrany-text {
     background-color: #fff;
@@ -317,7 +317,7 @@ a {
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     width: 570px;
     height: 224px;
     display: flex;
@@ -476,8 +476,7 @@ a {
     display: flex;
     justify-content: space-between;
     /*width: 1170px;*/
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0;
 }
 .promo-banners {
@@ -680,4 +679,7 @@ html {
     margin: 5px;
     padding: 8px;
     text-align: center;
+}
+.products-item-page {
+    margin-bottom: 0;
 }
