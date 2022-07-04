@@ -29,9 +29,9 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link header-search" href="#">
-              <!-- <span class="visually-hidden">
+              <span class="visually-hidden">
                 Поиск
-              </span> -->
+              </span>
             </a>
           </li>
           <li class="navigation-item">
@@ -55,12 +55,34 @@
       <section class="slider">
         <ul class="slider-gallery">
           <li class="slider-gallery-item">
-            <h2 class="slider-gallery-name">Нежный пломбир <br>с клубничным джемом</h2>
-            <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <img class="slider-image" src="images/ice-slide-1.png" alt="Нежный пломбир с клубничным джемом" width="306" height="507">
-            <button class="button" type="submit">Заказать</button>
+            <div class="slider-container">
+              <div class="slider-content">
+              <h2 class="slider-gallery-name">Нежный пломбир <br>с клубничным джемом</h2>
+              <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+              <button class="button button-slider" type="submit">Заказать</button>
+            </div>
+              <div class="slider-image-block">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="slider-image-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                </svg>
+                <!-- <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">
+                    <img src="images/arrow-left.svg" alt="Предыдущее фото" width="16" height="16">
+                    Предыдущее фото</span>
+                </button> -->
+                <img class="slider-image" src="images/ice-slide-1.png" alt="Нежный пломбир с клубничным джемом" width="306" height="507">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="slider-image-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
+                </svg>
+                <!-- <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">
+                    <img src="images/arrow-right.svg" alt="Следующее фото" width="16" height="16">
+                    Следующее фото</span>
+                </button> -->
+              </div>
+            </div>
           </li>
-          <li class="slider-gallery-item">
+          <!-- <li class="slider-gallery-item">
             <h2 class="slider-gallery-name">Сливочное мороженое <br>со вкусом банана</h2>
             <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
             <img class="slider-image" src="images/ice-slide-2.png" alt="Сливочное мороженое со вкусом банана" width="306" height="507">
@@ -71,18 +93,18 @@
             <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
             <img class="slider-image" src="images/ice-slide-3.png" alt="Карамельный пломбир с маршмеллоу" width="306" height="507">
             <button class="button" type="submit">Заказать</button>
-          </li>
+          </li> -->
         </ul>
-        <button class="slider-button slider-prev" type="button">
+        <!-- <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">
-            <!-- <img src="images/arrow-left.svg" alt="Предыдущее фото" width="16" height="16"> -->
+            <img src="images/arrow-left.svg" alt="Предыдущее фото" width="16" height="16">
             Предыдущее фото</span>
         </button>
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">
-            <!-- <img src="images/arrow-right.svg" alt="Следующее фото" width="16" height="16"> -->
+            <img src="images/arrow-right.svg" alt="Следующее фото" width="16" height="16">
             Следующее фото</span>
-        </button>
+        </button> -->
         <div class="slider-bottom">
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -161,7 +183,7 @@
         <h2 class="products-title">Попробуйте самые популярные <br>вкусы нашего мороженого</h2>
         <div class="products-page">
         <ul class="products-list">
-          <li class="products-item">
+          <li class="products-item products-item-page">
               <div class="products-item-image">
                 <img class="products-image" src="images/catalog/product-1.png" alt="Малинка" width="168" height="168">
               </div>
@@ -180,7 +202,7 @@
                 </div>
               </div>
           </li>
-            <li class="products-item">
+            <li class="products-item products-item-page">
               <div class="products-item-image">
                 <img class="products-image" src="images/catalog/product-2.png" alt="Фисташка" width="168" height="168">
               </div>
@@ -199,7 +221,7 @@
                 </div>
               </div>
           </li>
-          <li class="products-item">
+          <li class="products-item products-item-page">
             <div class="products-item-image">
               <img class="products-image" src="images/catalog/product-3.png" alt="Черника" width="168" height="168">
             </div>
@@ -218,7 +240,7 @@
             </div>
             </div>
           </li>
-          <li class="products-item">
+          <li class="products-item products-item-page">
             <div class="products-item-image">
               <img class="products-image" src="images/catalog/product-4.png" alt="Бабл-гам" width="168" height="168">
             </div>
@@ -263,10 +285,11 @@
         </div>
     <div class="page-content">
       <div class="blog">
-        <h2 class="visually-hidden">Блог</h2>
+      <div class="blog-content">
         <p class="blog-title">Новое в нашем блоге</p>
-        <b class="blog-description">10 способов сервировки фруктовых щербетов к столу</b>
+        <p class="blog-description">10 способов сервировки фруктовых щербетов к столу</p>
         <!-- <img class="blog-image" src="" alt="Сервировка фруктовых щербетов"> -->
+        </div>
       </div>
       <div class="news-subscription">
         <div class="news-subscription-content">
@@ -279,30 +302,33 @@
       </div>
     </div>
       <div class="delivery">
-        <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-      <div class="feedback">
-        <h2 class="visually-hidden">Подтверждение заказа</h2>
-        <p class="feedback-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="feedback-form-date info">
-            <label class="form-label" for="feedback-date">Дата</label>
-            <input class="input input-date" type="text" id="feedback-date" name="feedback-date" placeholder="01.04.2020">
-          </p>
-          <p class="feedback-form-phone">
-            <label class="form-label" for="feedback-phone">Телефон</label>
-            <input class="input input-phone" type="text" id="feedback-phone" name="feedback-phone" placeholder="+7 800 999-00-00">
-          </p>
-          <p class="feedback-form-address info">
-            <label class="form-label" for="feedback-address">Адрес</label>
-            <input class="input input-address" type="text" id="feedback-address" name="feedback-address" placeholder="ул. Большая Конюшенная, 19/8">
-          </p>
-          <button class="button-send" type="submit">Отправить</button>
-        </form>
+        <div class="delivery-container">
+          <div class="delivery-content">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <div class="feedback">
+            <p class="feedback-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="feedback-form-date info">
+                <label class="form-label" for="feedback-date">Дата</label>
+                <input class="input input-date" type="text" id="feedback-date" name="feedback-date" placeholder="01.04.2020">
+              </p>
+              <p class="feedback-form-phone">
+                <label class="form-label" for="feedback-phone">Телефон</label>
+                <input class="input input-phone" type="text" id="feedback-phone" name="feedback-phone" placeholder="+7 800 999-00-00">
+              </p>
+              <p class="feedback-form-address info">
+                <label class="form-label" for="feedback-address">Адрес</label>
+                <input class="input input-address" type="text" id="feedback-address" name="feedback-address" placeholder="ул. Большая Конюшенная, 19/8">
+              </p>
+              <button class="button-send" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
       <div class="contacts">
           <div class="contacts-form">
-            <h2 class="visually-hidden">Контакты</h2>
             <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
             <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
             <p class="contacts-text">Для заказов по телефону:</p>
