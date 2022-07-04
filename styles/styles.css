@@ -58,10 +58,24 @@ a {
     font-size: 36px;
     line-height: 46px;
     font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 136px;
 }
 .slider-description {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 0;
+    margin-top: 24px;
+}
+.button-slider {
+    margin-top: 48px;
+}
+.slider-image-arrow {
+    fill: #FCFCFC;
+}
+.slider-image-block {
+    width: 348px;
+    height: 554px;
 }
 .button {
     font-size: 16px;
@@ -142,17 +156,23 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: #565C66;
+    margin-bottom: 0;
+    margin-top: 32px;
 }
 .blog-description {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 0;
+    margin-top: 12px;
 }
 .news-subscription-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #565C66;
+    margin: 0;
+    padding-bottom: 42px;
 }
 .form-label {
     font-weight: 700;
@@ -169,6 +189,13 @@ a {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
+    color: #2D3440;
+    margin-top: 167px;
+    margin-bottom: 0;
+}
+.delivery-text {
+    margin-bottom: 0;
+    margin-top: 24px;
 }
 .delivery-text, .feedback-text, .contacts-text {
     font-weight: 400;
@@ -263,7 +290,8 @@ a {
     margin: 0 auto;
     border-radius: 16px;
     width: 1122px;
-    height: 432px;
+    /*height: 432px;*/
+    margin-top: 44px;
 }
 .about-comrany-text {
     background-color: #fff;
@@ -292,7 +320,7 @@ a {
     margin-bottom: 20px;
     width: 570px;
     height: 224px;
-
+    display: flex;
 }
 .news-subscription {
     background: url(../images/subscribe.jpg) no-repeat;
@@ -302,13 +330,14 @@ a {
     border-radius: 16px;
     width: 558px;
     height: 212px;
+    display: flex;
 }
 .news-subscription-content {
     background-color: #fff;
     border-radius: 16px;
-    padding: 6px;
-    /*width: 558px;*/
-    height: 200px;
+    padding: 26px;
+    /*width: 558px;
+    height: 200px;*/
 
 }
 .delivery {
@@ -317,14 +346,17 @@ a {
     background-position: center center;
     border-radius: 16px;
     /*width: 1170px;*/
-    height: 534px;
+    /*height: 534px;*/
     margin: 0 auto;
 }
 
 .feedback {
     background-color: #fff;
-    width: 500px;
+    width: 420px;
     border-radius: 16px;
+    margin-left: auto;
+    margin: 64px;
+    padding: 40px;
 }
 .contacts {
     background: url(../images/feedback.jpg) no-repeat;
@@ -334,12 +366,16 @@ a {
     /*width: 1170px;*/
     height: 492px;
     margin: 0 auto;
+    display: flex;
 }
 .contacts-form {
     background-color: #fff;
-    width: 343px;
-    height: 364px;
+    width: 263px;
+    /* height: 364px; */
     border-radius: 16px;
+    margin: 64px;
+    padding: 41px;
+
 }
 .banners-item {
     background-color: FCFCFC;
@@ -364,12 +400,12 @@ a {
 .input {
     border: 1px solid #B9B9B9;
     border-radius: 4px;
-    width: 332px;
+    /*width: 332px;*/
     height: 48px;
     font-size: 16px;
 }
 .input-email {
-    width: 332px;
+    width: 320px;
 }
 .input-date {
     width: 117px;
@@ -389,7 +425,7 @@ a {
 }
 .navigation-item-link {
     background: #FF4A78;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 .breadcrumbs-link {
     font-weight: 700;
@@ -411,6 +447,7 @@ a {
     background-color: #FFCBD8;
     border: none;
     padding: 8px;
+    color: #2D3440;
 }
 .catalog-sort, .catalog-products {
     font-weight: 400;
@@ -425,6 +462,10 @@ a {
     border: 2px solid #FCFCFC;
     border-radius: 20px;
     padding: 8px;
+    color: #2D3440;
+}
+.pagination-show-more {
+    color: #2D3440;
 }
 .pagination-link {
     font-weight: 400;
@@ -437,7 +478,6 @@ a {
     /*width: 1170px;*/
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
     padding: 0;
 }
 .promo-banners {
@@ -495,6 +535,7 @@ html {
 .navigation-user {
     max-width: 431px;
     margin-left: auto;
+    align-items: center;
 }
 .page-container {
     /*width: 1170px;*/
@@ -556,13 +597,16 @@ html {
 }
 .product-cart {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /*flex-direction: row;*/
+    justify-content: space-between;
     align-items: center;
     padding: 0;
 }
 .products {
     margin-top: 80px;
+}
+.products-page-catalog {
+    margin-top: 44px;
 }
 .navigation-link-active {
     color: #FCFCFC;
@@ -591,4 +635,49 @@ html {
 }
 .header-social-item, .footer-social-item {
     padding-right: 16px;
+}
+.blog-content {
+    padding-left: 32px;
+    width: 303px;
+}
+.delivery-container {
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-content {
+    padding-left: 100px;
+    width: 371px;
+
+}
+.promo, .page-content, .delivery, .contacts {
+    margin-top: 80px;
+}
+.news-form {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-gallery {
+    padding-left: 70px;
+}
+.slider-gallery-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-content {
+    width: 470px;
+}
+.products-item-description {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.navigation-link-catalog {
+    display: block;
+    margin: 5px;
+    padding: 8px;
+    text-align: center;
 }
