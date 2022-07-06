@@ -232,6 +232,24 @@ a {
     line-height: 22px;
     color: #565C66;
 }
+.feedback-text {
+    margin: 0;
+    margin-bottom: 32px;
+}
+.contacts-address-text {
+    margin: 0;
+    margin-bottom: 24px;
+}
+.contacts-text {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.button-feedback {
+    display: block;
+    margin: 0;
+    margin-top: 32px;
+}
 .feedback-form-date {
     font-weight: 700;
     font-size: 16px;
@@ -247,13 +265,18 @@ a {
     font-size: 14px;
     line-height: 20px;
     color: #565C66;
+    margin: 0;
 }
 .footer-menu-link {
     font-size: 14px;
     line-height: 20px;
 }
-.footer-menu-list-first {
+
+.footer-menu-item-first {
     font-weight: 700;
+}
+.footer-menu-list {
+    margin: 0;
 }
 .footer-copyright-text {
     font-weight: 400;
@@ -408,7 +431,7 @@ a {
     /* height: 364px; */
     border-radius: 16px;
     margin: 64px;
-    padding: 41px;
+    padding: 40px;
 
 }
 .banners-item {
@@ -416,8 +439,12 @@ a {
     width: 570px;
     height: 268px;
 }
+.footer-menu-item {
+    padding-bottom: 8px;
+}
 .footer-menu-item-first {
-    background: url(../images/heart-fill.svg) no-repeat;
+    /*background: url(../images/heart-fill.svg) no-repeat;*/
+    font-weight: 700;
 }
 /*.footer-copyright-logo {
     background: url(../images/logo-htmlacademy.svg) no-repeat;
@@ -522,22 +549,27 @@ a {
 .products-list {
     flex-wrap: wrap;
 }
+
 .page-footer-container {
     /*width: 1170px;*/
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
 }
 .footer-social {
     min-width: 104px;
-    margin-right: auto;
+    margin: 0;
 }
 .footer-menu {
-    width: 356px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
 }
-.footer-copyright {
+/*.footer-copyright {
     width: 193px;
     margin-left: 100px;
-}
+}*/
 .page-header {
     display: flex;
     margin-top: 34px;
@@ -595,6 +627,7 @@ html {
 }
 .footer-menu-container{
     display: flex;
+    justify-content: space-between;
 }
 .slider-pagination {
     display: flex;
@@ -610,9 +643,6 @@ html {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-}
-.footer-menu-container {
-    width: 356px;
 }
 .header-social-list {
     display: flex;
@@ -750,4 +780,7 @@ html {
 }
 .pagination-container {
     margin-bottom: 40px;
+}
+.htmlacademy-link {
+    text-decoration: underline;
 }
