@@ -72,14 +72,19 @@
               </ul>
             <h1 class="inner-header-title">Сливочное мороженое</h1>
           </header>
-          <div class="catalog-sort">
-            <div class="catalog-sort-container">
-              <span class="select-sort">Сортировка:
+
+          <div class="catalog-sorting">
+            <div class="catalog-sorting-container">
+              <span class="select-sorting">Сортировка:
                 <select class="select-control" aria-label="Сортировка">
                   <option value="popular">по популярности</option>
                 </select>
               </span>
-              <span class="select-sort">Цена: 100 ₽ – 500 ₽</span>
+              <span class="select-sort">Цена: 100 ₽ – 500 ₽
+                <select class="select-control" aria-label="Цена">
+                    <option value="price">*</option>
+                  </select>
+              </span>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Жирность:</legend>
@@ -110,7 +115,9 @@
                         </li>
                     </ul>
                 </fieldset>
-
+              </form>
+            </div>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Наполнители:</legend>
                     <ul class="catalog-filter-list">
@@ -147,9 +154,9 @@
                     </ul>
                 </fieldset>
                 <button class="button button-filter" type="submit">Применить</button>
-        </form>
-            </div>
+            </form>
           </div>
+
           <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 

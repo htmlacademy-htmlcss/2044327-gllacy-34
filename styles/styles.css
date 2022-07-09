@@ -219,20 +219,20 @@ a {
     font-size: 32px;
     line-height: 46px;
     color: #2D3440;
-    margin-top: 167px;
+    margin-top: 150px;
     margin-bottom: 0;
 }
 .delivery-text {
     margin-bottom: 0;
     margin-top: 24px;
 }
-.delivery-text, .feedback-text, .contacts-text {
+.delivery-text, .appointment-text, .contacts-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #565C66;
 }
-.feedback-text {
+.appointment-text {
     margin: 0;
     margin-bottom: 32px;
 }
@@ -250,7 +250,7 @@ a {
     margin: 0;
     margin-top: 32px;
 }
-.feedback-form-date {
+.appointment-form-date {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -283,7 +283,7 @@ a {
     font-size: 12px;
     line-height: 16px;
 }
-.button-send, .button-feedback {
+.button-feedback, .button-send {
     background: #FF2F64;
     border: 4px solid #ffcbd8;
     /*box-shadow: 0px 4px 12px rgb(45 52 64 / 10%);*/
@@ -406,7 +406,7 @@ a {
     margin: 0 auto;
 }
 
-.feedback {
+.appointment {
     background-color: #fff;
     width: 420px;
     border-radius: 16px;
@@ -477,10 +477,6 @@ a {
 .input-address {
     width: 420px;
 }
-.button-send {
-    margin-left: 24px;
-}
-
 .navigation-link-current {
     color: #FCFCFC;
 }
@@ -513,7 +509,7 @@ a {
     padding: 8px;
     color: #2D3440;
 }
-.catalog-sort, .catalog-products {
+.catalog-sorting, .catalog-products {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -783,4 +779,43 @@ html {
 }
 .htmlacademy-link {
     text-decoration: underline;
+}
+.appoitment-form {
+    display: grid;
+    grid-template-columns: 117px 287px;
+    gap: 16px;
+}
+.appointment-form-address {
+    grid-column: 1 / -1;
+}
+.appointment-submit {
+    background: #FF2F64;
+    border: 4px solid #ffcbd8;
+    border-radius: 26px;
+    color: #FCFCFC;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 12px 32px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+.field-group {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/*.field-group label,
+.field-group input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}*/
+.catalog-sorting-container {
+    display: grid;
+    grid-template-columns: 196px 196px 383px;
+    gap: 24px;
+}
+.catalog-filter-group {
+    border: 0;
 }
