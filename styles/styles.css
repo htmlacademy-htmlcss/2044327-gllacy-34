@@ -521,7 +521,7 @@ a {
     background: rgba(252, 252, 252, 0.3);
     border: 2px solid #FCFCFC;
     border-radius: 20px;
-    padding: 8px;
+    padding: 8px 24px;
     color: #2D3440;
     grid-column: 1 / -1;
 }
@@ -709,12 +709,12 @@ html {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     border-radius: 20px;
     background-color: #FFCBD8;
     border: none;
     color: #2D3440;
-    padding: 8px;
+    padding: 8px 24px;
 }
 .about-company-list {
     display: flex;
