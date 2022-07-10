@@ -848,11 +848,15 @@ html {
     font-size: 14px;
     line-height: 20px;
 }
+.catalog-filter-title {
+    margin-bottom: 8px;
+}
 .filter-group {
     display: flex;
     flex-direction: column;
     margin: 0;
     margin-right: 24px;
+    gap: 8px;
 }
 /*.catalog-filter-filler {
     grid-row: 1 / 4;
