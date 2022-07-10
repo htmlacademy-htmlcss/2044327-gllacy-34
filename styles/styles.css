@@ -141,13 +141,7 @@ a {
     margin-bottom: 56px;
     /*color: #2D3440;*/
 }
-.products-item {
-    background-color: #FCFCFC;
-    border-radius: 8px;
-    width: 270px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
+
 .products-card {
     background-color: #FCFCFC;
     border-radius: 8px;
@@ -370,7 +364,7 @@ a {
     border-radius: 16px;
     width: 1122px;
     /*height: 432px;*/
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .about-comrany-text {
     background-color: #fff;
@@ -558,7 +552,7 @@ a {
     font-size: 16px;
     line-height: 20px;
 }
-.page-content, .products-list-page, .promo-banners { /*.products-list*/
+.page-content, .promo-banners { /*.products-list*/
     display: flex;
     justify-content: space-between;
     /*width: 1170px;*/
@@ -574,7 +568,7 @@ a {
 .products-list {
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    gap: 40px 30px;
+    gap: 0 30px;
     padding: 0;
 }
 .page-footer-container {
@@ -843,9 +837,9 @@ html {
     padding: 8px;
     text-align: center;
 }
-.products-item-page {
+/*.products-item-page {
     margin-bottom: 0;
-}
+}*/
 .pagination-container {
     margin-bottom: 40px;
 }
