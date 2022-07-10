@@ -509,7 +509,7 @@ a {
     padding: 8px;
     color: #2D3440;
 }
-.catalog-sorting, .catalog-products {
+.filter-group, .catalog-products {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -517,13 +517,15 @@ a {
 .button-filter {
     font-size: 14px;
     width: 185px;
-    height: 36px;
+    height: 38px;
     background: rgba(252, 252, 252, 0.3);
     border: 2px solid #FCFCFC;
     border-radius: 20px;
     padding: 8px 24px;
     color: #2D3440;
-    grid-column: 1 / -1;
+    /*grid-column: 1 / -1;*/
+    margin-top: 16px;
+    align-self: end;
 }
 .pagination-show-more {
     color: #2D3440;
@@ -714,7 +716,13 @@ html {
     background-color: #FFCBD8;
     border: none;
     color: #2D3440;
+
+}
+.catalog-filter-top {
     padding: 8px 24px;
+}
+.catalog-filter-bottom {
+    padding: 9px 24px;
 }
 .about-company-list {
     display: flex;
@@ -824,13 +832,44 @@ html {
     width: 100%;
     box-sizing: border-box;
 }*/
-.catalog-sorting-container {
+/*.catalog-sorting-container {
     display: grid;
     grid-template-columns: 196px 196px 383px;
     gap: 24px;
-}
+}*/
 .catalog-filter-group {
     border: 0;
     display: flex;
     margin: 0;
+    padding: 0;
+}
+.catalog-filter-title, .catalog-filter-list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 24px;
+}
+/*.catalog-filter-filler {
+    grid-row: 1 / 4;
+}*/
+.catalog-sorting {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.catalog-sorting-filler {
+    margin-top: 16px;
+}
+.catalog-filter-filler {
+    padding: 9px 24px;
+}
+.filter-group-bottom {
+    margin-right: 16px;
 }
