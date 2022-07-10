@@ -81,7 +81,7 @@ a {
     margin-bottom: 0;
     margin-top: 24px;
 }
-.button-slider {
+.slider-button {
     margin-top: 48px;
 }
 .slider-image-arrow {
@@ -330,12 +330,12 @@ a {
     display: flex;
 }
 .button-products-cart {
-    background: #FF2F64;
+    background: #FF2F64 url(../images/cart.svg) no-repeat center;
     border: none;
     border-radius: 26px;
-    width: 32px;
+    width: 16px;
     padding: 8px;
-    height: 32px;
+    height: 16px;
     justify-content: center;
 }
 .about-company-container {
@@ -725,16 +725,37 @@ html {
     padding: 9px 24px;
 }
 .about-company-list {
-    display: flex;
-    width: 1042px;
-    padding-left: 40px;
+    display: grid;
+    max-width: 1043px;
     margin: 0;
+    margin-bottom: 40px;
+    grid-template-columns: 505px 505px;
+    gap: 32px;
+    padding-left: 16px;
 }
 .about-company-item {
     max-width: 505px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 58px;
+    display: flex;
+}
+.ice-cream {
+    background-image: url(../images/ice.svg);
+}
+.cow {
+    background-image: url(../images/cow.svg);
+}
+.leaf {
+    background-image: url(../images/leaf.svg);
+}
+.thermometer {
+    background-image: url(../images/thermometer.svg);
 }
 .about-company-description {
     padding-right: 32px;
+    margin: 0;
+    padding: 0;
 }
 .slider-bottom {
     display: flex;
