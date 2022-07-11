@@ -679,20 +679,7 @@ html {
     padding: 0;
     flex-wrap: wrap;
 }
-.pagination-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.pagination-item {
-    padding-right: 8px;
-}
-.pagination {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
+
 .breadcrumbs {
     display: flex;
     /*width: 143px;*/
