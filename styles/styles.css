@@ -1083,6 +1083,7 @@ html {
     border: 2px solid #2D3440;
     border-radius: 30px;
     color: #2D3440;
+    outline: none;
 }
 .navigation-link:active {
     background: #FF4A78;
@@ -1213,9 +1214,7 @@ html {
     background: #FCFCFC;
     border-radius: 100px;
 }
-.footer-social-item:hover .social-icon-svg {
-    fill:#2D3440;
-}
+
 /*.navigation-background-search:hover, .navigation-background-login:hover, .navigation-background-cart:hover {
     background: rgba(252, 252, 252, 0.5);
     border-radius: 27px;
@@ -1262,4 +1261,30 @@ html {
     background: rgba(252, 252, 252, 0.3);
     border: 2px solid #2D3440;
     border-radius: 26px;
+}
+.footer-social-link {
+    display: block;
+}
+.social-icon-svg {
+    border: 2px solid #FFCBD8;
+    border-radius: 50%;
+}
+
+
+.footer-social-link:hover {
+    background: #2D3440;
+    height: 28px;
+    border-radius: 50%;
+    display: block;
+}
+.footer-social-link:active {
+    opacity: 0.5;
+    border: 2px solid #FFCBD8;
+    border-radius: 50%;
+}
+.footer-social-link:focus {
+    background: #2D3440;
+    border: 2px solid #2D3440;
+    border-radius: 24px;
+    height: 28px;
 }
