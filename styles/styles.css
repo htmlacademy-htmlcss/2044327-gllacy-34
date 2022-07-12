@@ -1221,14 +1221,16 @@ html {
     border-radius: 27px;
     border: none;
 }*/
+
 .footer-menu-item-first .footer-menu-link::before {
     content: url(../images/heart-fill.svg);
     display: block;
     width: 16px;
     height: 16px;
     position: absolute;
-    top: 5px;
-    left: -24px;
+    top: 4px;
+    left: -20px;
+    pointer-events: none;
 }
 .slider-image-arrow {
     background: rgba(252, 252, 252, 0.3);
