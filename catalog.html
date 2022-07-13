@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="images/favicon.svg">
   </head>
   <body>
     <header class="page-header">
@@ -74,13 +75,16 @@
           </header>
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="catalog-sorting">
-                <span class="select-sorting filter-group">Сортировка:
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">по популярности</option>
-                    </select>
-                </span>
-            </div>
+
+              <div class="select sorting-type">
+                <span class="select-sorting filter-group">Сортировка:</span>
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">по популярности</option>
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+              </div>
+
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цена:</legend>
               <div class="range">
@@ -103,6 +107,7 @@
                     – <input class="range-input" type="number" value="500" name="max-price"> ₽
                   </label>
                 </div>
+
               </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
@@ -139,32 +144,37 @@
             <ul class="catalog-filter-list catalog-filter-bottom">
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input check-on" type="checkbox" name="шоколадные" checked>
-                            шоколадные
+                        <input class="visually-hidden control-input check-on" type="checkbox" name="шоколадные" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">шоколадные</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input check-on" type="checkbox" name="сахарные посыпки" checked>
-                            сахарные посыпки
+                        <input class="visually-hidden control-input check-on" type="checkbox" name="сахарные посыпки" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">сахарные посыпки</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="checkbox" name="фрукты">
-                            фрукты
+                        <input class="visually-hidden control-input" type="checkbox" name="фрукты">
+                        <span class="control-mark"></span>
+                        <span class="control-label">фрукты</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="checkbox" name="сиропы">
-                            сиропы
+                        <input class="visually-hidden control-input" type="checkbox" name="сиропы">
+                        <span class="control-mark"></span>
+                        <span class="control-label">сиропы</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="checkbox" name="джемы">
-                            джемы
+                        <input class="visually-hidden control-input" type="checkbox" name="джемы">
+                        <span class="control-mark"></span>
+                        <span class="control-label">джемы</span>
                     </label>
                 </li>
             </ul>
@@ -527,5 +537,36 @@
       </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Личный кабинет</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-login">Логин</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-password">Пароль</label>
+              <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+            </p>
+            <p class="field-group auth-form-user-options">
+              <label class="auth-form-checkbox control">
+                <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                <span class="control-mark"></span>
+                <span class="control-label">Запомнить меня</span>
+              </label>
+              <a class="auth-form-recovery" href="#">Забыл пароль</a>
+            </p>
+            <button class="button auth-form-button" type="submit">Войти</button>
+            <a class="button auth-form-register" href="#">Регистрация</a>
+          </form>
+        </section>
+      </div>
+    </div>
     </body>
   </html>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="images/favicon.svg">
   </head>
   <body>
     <header class="page-header">
@@ -14,6 +15,7 @@
         <ul class="navigation-list">
             <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Каталог</a>
+
             </li>
             <li class="navigation-item">
                 <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -54,6 +56,48 @@
                   </span>
                   <span class="header-cart-value">2 товара</span>
                 </a>
+
+                <div class="popover popover-cart popover-open">
+
+                  <!-- <button class="popover-close-button button button-light">
+                    2
+                    <span class="visually-hidden">Закрыть</span>
+                  </button> -->
+
+                  <div class="popover-content">
+                    <h2 class="popover-title">Корзина</h2>
+
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <img src="/images/cart-item-image-1.png" alt="Малинка" width="">
+                        <p class="cart-item-title">Малинка</p>
+                        <p class="cart-item-description">1 кг х 310 ₽</p>
+                        <p class="cart-item-price">310 ₽</p>
+                        <button type="button" class="cart-item-button">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <img src="/images/cart-item-image-2.png" alt="Малинка" width="">
+                        <p class="cart-item-title">Бабл-гам</p>
+                        <p class="cart-item-description">1,5 кг х 320 ₽</p>
+                        <p class="cart-item-price">480 ₽</p>
+                        <button type="button" class="cart-item-button">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
             </li>
         </ul>
     </nav>
@@ -283,17 +327,22 @@
           <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
           <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
+
           <div class="appointment">
             <p class="appointment-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="appoitment-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group appointment-form-date">
-                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z" fill="#2D3440"/>
-                </svg> -->
-                <!-- <button class="info">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                </button> -->
-                <label class="form-label" for="appointment-date">Дата</label>
+                <span class="form-label">
+                  <label class="form-label form-label-icon" for="appointment-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z" fill="#2D3440"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+                  </span>
+                </span>
                 <input class="field input-date" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
               </p>
               <p class="field-group appointment-form-phone">
@@ -301,9 +350,7 @@
                 <input class="field input-phone" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group appointment-form-address">
-                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z" fill="#2D3440"/>
-                </svg> -->
+                <!--  -->
                 <!-- <button class="info">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button> -->
@@ -400,5 +447,36 @@
       </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Личный кабинет</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-login">Логин</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-password">Пароль</label>
+              <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+            </p>
+            <p class="field-group auth-form-user-options">
+              <label class="auth-form-checkbox control">
+                <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                <span class="control-mark"></span>
+                <span class="control-label">Запомнить меня</span>
+              </label>
+              <a class="auth-form-recovery" href="#">Забыл пароль</a>
+            </p>
+            <button class="button auth-form-button" type="submit">Войти</button>
+            <a class="button auth-form-register" href="#">Регистрация</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
