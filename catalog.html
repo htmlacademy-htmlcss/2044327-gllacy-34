@@ -80,80 +80,110 @@
                         <option value="popular">по популярности</option>
                     </select>
                 </span>
-                <span class="select-sort filter-group">Цена: 100 ₽ – 500 ₽
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">по популярности</option>
-                    </select>
-                </span>
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Жирность:</legend>
-                    <ul class="catalog-filter-list catalog-filter-top">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-content">
-                                    0%
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-content" checked>
-                                    до 10%
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-content">
-                                    до 30%
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="fat-content">
-                                    выше 30%
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
+            </div>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цена:</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 42px; width: 136px">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="100" name="min-price"> ₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    – <input class="range-input" type="number" value="500" name="max-price"> ₽
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Жирность:</legend>
+              <ul class="catalog-filter-list catalog-filter-top">
+                  <li class="catalog-filter-item">
+                      <label class="control">
+                          <input class="control-input" type="radio" name="fat-content">
+                              0%
+                      </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                      <label class="control">
+                          <input class="control-input" type="radio" name="fat-content" checked>
+                              до 10%
+                      </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                      <label class="control">
+                          <input class="control-input" type="radio" name="fat-content">
+                              до 30%
+                      </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                      <label class="control">
+                          <input class="control-input" type="radio" name="fat-content">
+                              выше 30%
+                      </label>
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group filter-group-bottom">
+            <legend class="catalog-filter-title">Наполнители:</legend>
+            <ul class="catalog-filter-list catalog-filter-bottom">
+                <li class="catalog-filter-item">
+                    <label class="control">
+                        <input class="control-input check-on" type="checkbox" name="шоколадные" checked>
+                            шоколадные
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label class="control">
+                        <input class="control-input check-on" type="checkbox" name="сахарные посыпки" checked>
+                            сахарные посыпки
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label class="control">
+                        <input class="control-input" type="checkbox" name="фрукты">
+                            фрукты
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label class="control">
+                        <input class="control-input" type="checkbox" name="сиропы">
+                            сиропы
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label class="control">
+                        <input class="control-input" type="checkbox" name="джемы">
+                            джемы
+                    </label>
+                </li>
+            </ul>
+          </fieldset>
+        <button class="button button-filter" type="submit">Применить</button>
+      </form>
+
+              <!-- <span class="select-sort filter-group">Цена: 100 ₽ – 500 ₽
+              <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">по популярности</option>
+              </select>
+                </span> -->
+
           </div>
           <div class="catalog-sorting catalog-sorting-filler">
-                <fieldset class="catalog-filter-group filter-group-bottom">
-                    <legend class="catalog-filter-title">Наполнители:</legend>
-                    <ul class="catalog-filter-list catalog-filter-bottom">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input check-on" type="checkbox" name="шоколадные" checked>
-                                    шоколадные
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input check-on" type="checkbox" name="сахарные посыпки" checked>
-                                    сахарные посыпки
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="фрукты">
-                                    фрукты
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="сиропы">
-                                    сиропы
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="джемы">
-                                    джемы
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button class="button button-filter" type="submit">Применить</button>
+
+
           </div>
-        </form>
+
 
           <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
