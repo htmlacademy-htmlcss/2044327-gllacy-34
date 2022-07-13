@@ -97,7 +97,12 @@ a {
     align-items: center;
     display: flex;
 }
-
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
 .slider-image-arrow {
     fill: #FCFCFC;
 }
@@ -1197,26 +1202,72 @@ html {
 .slider-button:focus .slider-image-arrow {
     fill: #2D3440;
 }
-.footer-social-link {
+.footer-social-link,
+.header-social-link {
     display: block;
+    position: relative;
+    z-index: 3;
 }
+.footer-social-link:focus .social-icon-svg {
+    /*border: 2px solid #2d3440;*/
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+.footer-social-link:focus,
+.header-social-link:focus {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background-color: rgba(45, 52, 64, 1);
+    outline: 2px solid rgba(45, 52, 64, 1);
+}
+
 .social-icon-svg {
     border: 2px solid #FFCBD8;
     border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+.footer-social-link::after,
+.header-social-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #2D3440;
+    top: 7px;
+    border-radius: 50%;
+    left: 7px;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+}
+.footer-social-link:hover::after,
+.header-social-link:hover::after {
+    transition: 0.5s;
+    opacity: 1;
+}
+.footer-social-link:active::after {
+    background-color: rgba(45, 52, 64, 0.5);
+    outline: 2px solid rgba(252, 252, 252, 0.5);
 }
 
 
-.footer-social-link:hover,
+
+
+/*.footer-social-link:hover,
 .header-social-link:hover {
     background: #2D3440;
     height: 28px;
     border-radius: 50%;
     display: block;
-}
+}*/
 .footer-social-link:active,
 .header-social-link:active {
     opacity: 0.5;
-    border: 2px solid #FFCBD8;
+    /*border: 2px solid #FFCBD8;*/
     border-radius: 50%;
 }
 .footer-social-link:focus,
@@ -1240,13 +1291,16 @@ html {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    padding-top: 136px;
+    padding-left: 70px;
 }
 .slider-gallery-name {
     font-size: 36px;
     line-height: 46px;
     font-weight: 900;
-    margin-bottom: 0;
-    margin-top: 136px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
 }
 .slider-description {
     font-size: 18px;
