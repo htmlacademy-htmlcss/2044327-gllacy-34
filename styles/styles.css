@@ -102,6 +102,7 @@ a {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    padding-top: 41px;
 }
 .slider-image-arrow {
     fill: #FCFCFC;
@@ -326,42 +327,14 @@ a {
     color: #FCFCFC;
 }
 
-/*.header-search {
-    background: url(../images/search.svg) no-repeat;
-    display: block;
-}
-.header-login {
-    background: url(../images/login.svg) no-repeat;
-    display: block;
-}
-.header-cart {
-    background: url(../images/cart.svg) no-repeat;
-    display: block;
-}
-.slider-prev {
-    background: url(../images/arrow-left.svg) no-repeat;
-}
-.slider-next {
-    background: url(../images/arrow-right.svg) no-repeat;
-}
-.social-telegram {
-    background: url(../images/telegram.svg) no-repeat;
-}
-.social-vk {
-    background: url(../images/vk.svg) no-repeat;
-}
-.social-youtube {
-    background: url(../images/youtube.svg) no-repeat;
-}*/
 .promo-raspberry, .promo-marshmallow {
     background-color: #FF7799;
     width: 570px;
-    /*height: 268px;*/
     border-radius: 16px;
     display: flex;
 }
 .button-products-cart {
-    background: #FF2F64 /*url(../images/cart.svg) no-repeat center*/;
+    background: #FF2F64;
     border: none;
     border-radius: 50%;
     width: 16px;
@@ -596,12 +569,12 @@ a {
     width: 193px;
     margin-left: 100px;
 }*/
-.page-header {
+/*.page-header {
     display: flex;
     margin-top: 34px;
     align-items: center;
     margin-bottom: 32px;
-}
+}*/
 
 /*.products-page {
     padding-top: 56px;
@@ -617,6 +590,7 @@ html {
     display: flex;
     width: 1170px;
     margin: 0 auto;
+    padding-top: 21px;
 }
 .navigation-list {
     margin: 0;
@@ -800,6 +774,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 1170px;
 }
 .header-social-item, .footer-social-item {
     margin-right: 16px;
@@ -823,10 +798,6 @@ html {
 .promo, .page-content, .delivery, .contacts {
     margin-top: 80px;
 }
-
-/*.slider-gallery {
-    padding-left: 70px;
-}*/
 .slider-gallery-item {
     display: flex;
     justify-content: space-between;
@@ -1306,7 +1277,7 @@ html {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 0;
-    margin-top: 24px;
+
 }
 .button-slider {
 	display: block;
@@ -1316,18 +1287,36 @@ html {
 .slider-gallery {
     display: flex;
     justify-content: space-between;
-    background: #FFCBD8;
+    align-items: center ;
+    /*background: #FFCBD8;
     border-radius: 50%;
     width: 312px;
     height: 312px;
     margin-top: 120px;
     margin-right: 350px;
-    /*transform: translate(495px, -310px);*/
+    transform: translate(495px, -310px);*/
 }
-.slider-image {
+.slider-gallery-wrapper {
+    position: relative;
+    /*width: 306px;*/
+}
+.slider-gallery-next {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFCBD8;
+    opacity: 0.4;
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+}
+/*.slider-gallery-wrapper:nth-child(4) {
+    margin-right: 40px;
+}*/
+/*.slider-image {
 	transform: translateY(-20%);
 }
-/*.slider-next {
+.slider-next {
 	background: rgba(252, 252, 252, 0.3);
     border: 2px solid #FCFCFC;
     border-radius: 50%;
@@ -1349,12 +1338,7 @@ html {
     margin: 0;
     transform: rotate(180deg);
 }*/
-.slider-bottom {
-	display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 76px;
-}
+
 .slider-pagination {
 	display: flex;
     justify-content: flex-start;
@@ -1393,9 +1377,41 @@ html {
     border-radius: 50%;
     padding: 8px;
 }
-.slider-next, .slider-prev {
-    transform: rotate(180deg);
+
+.slider-gallery-image-1 {
+    width: 312px;
+    height: 312px;
+    border-radius: 50%;
+    background-color: #FFCBD8;
+    position: absolute;
+    top: 20%;
+    z-index: -1;
 }
+.slider-prev {
+
+    position: relative;
+    left: 22px;
+    top: 3px;
+    order: -1;
+}
+.slider-next {
+    position: relative;
+    right: 20px;
+    top: 3px;
+    /*margin-right: 16px;*/
+}
+.slider-gallery-image-1 {
+    width: 312px;
+    height: 312px;
+    border-radius: 50%;
+    background-color: #FFCBD8;
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+}
+/*.slider-next, .slider-prev {
+    transform: rotate(180deg);
+}*/
 .field {
     margin: 0;
     padding: 14px 16px;
