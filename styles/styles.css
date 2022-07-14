@@ -107,10 +107,7 @@ a {
 .slider-image-arrow {
     fill: #FCFCFC;
 }
-/*.slider-image-block {
-    width: 348px;
-    height: 554px;
-}*/
+
 .button {
     font-size: 16px;
     line-height: 20px;
@@ -354,34 +351,19 @@ a {
     margin: 0 auto;
     border-radius: 16px;
     width: 1122px;
-    /*height: 432px;*/
     margin-top: 40px;
 }
 .about-comrany-text {
     background-color: #fff;
-    /*width: 1074px;
-    height: 432px;*/
     padding: 24px;
     border-radius: 16px;
 }
-/*.ice-cream {
-    background: url(../images/ice-cream.svg) no-repeat;
-}
-.cow {
-    background: url(../images/cow.svg) no-repeat;
-}
-.leaf {
-    background: url(../images/leaf.svg) no-repeat;
-}
-.thermometer {
-    background: url(../images/thermometer.svg) no-repeat;
-}*/
+
 .blog {
     background: url(../images/news.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
-    /*margin-bottom: 20px;*/
     width: 570px;
     height: 224px;
     display: flex;
@@ -400,17 +382,12 @@ a {
     background-color: #fff;
     border-radius: 16px;
     padding: 26px;
-    /*width: 558px;
-    height: 200px;*/
-
 }
 .delivery {
     background: url(../images/delivery.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
-    /*width: 1170px;*/
-    /*height: 534px;*/
     margin: 0 auto;
 }
 
@@ -427,7 +404,6 @@ a {
     background-size: cover;
     background-position: center center;
     border-radius: 16px;
-    /*width: 1170px;*/
     height: 492px;
     margin: 0 auto;
     display: flex;
@@ -631,10 +607,10 @@ html {
 .header-cart-value {
     padding-left: 22px;
 }
-.page-container {
-    /*width: 1170px;*/
+/*.page-container {
+
     margin: 0 auto;
-}
+}*/
 .logo {
     max-width: 137px;
     margin-right: 16px;
@@ -835,11 +811,13 @@ html {
 .appointment-form-address {
     grid-column: 1 / -1;
 }
-.appointment-submit {
+.modal .appointment-submit {
+    margin-top: 32px;
+    outline: none;
     background: #FF2F64;
     color: #FCFCFC;
-    grid-column: 1 / -1;
-    justify-self: center;
+    /*grid-column: 1 / -1;
+    justify-self: center;*/
 }
 .field-group {
     margin: 0;
@@ -1704,49 +1682,82 @@ html {
 .popover-open {
     display: block;
 }
+
+.modal-container-close {
+    display: none;
+  }
+
 .modal-container {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    /*display: flex;*/
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background:  rgb(45, 52, 64, 0.3);
 }
 .modal {
     position: relative;
     margin: auto;
-    padding: 40px;
-    background-color: #ffffff;
+    /*padding: 40px;*/
+    background-color: #FCFCFC;
   }
-  .modal-auth {
-    width: 360px;
+  .modal-feedback {
+    width: 570px;
+    padding: 64px;
+    background: #FCFCFC;
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 12%);
+    border-radius: 8px;
   }
   .modal-close-button {
     position: absolute;
-    padding: 0;
-    top: 0;
-    right: 0;
-    width: 56px;
-    height: 44px;
-    background-color: #ffffff;
+    padding: 16px;
+    top: 24px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
     border: none;
-    background-image: url("images/close.svg");
+    background-image: url("../images/cross.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    background-color: #FCFCFC;
   }
   .modal-title {
     margin: 0;
-    margin-bottom: 24px;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 32px;
-    line-height: 35px;
+    margin-bottom: 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
+    color: #2d3440;
+    padding: 0;
   }
-  .auth-form .field-group {
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-form .text-area:not(:nth-child(3)) {
+    margin: 0;
+    margin-bottom: 16px;
+}
+.text-area {
+    margin: 0;
+    padding: 14px 16px;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 24px;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 400;
+    line-height: 20px;
+}
+textarea {
+    min-height: 150px;
+}
+
+  /*.auth-form .field-group {
     margin: 0;
     margin-bottom: 16px;
   }
@@ -1782,9 +1793,7 @@ html {
     color: #000000;
     background-color: #ffffff;
   }
-  .modal-container-close {
-    display: none;
-  }
+*/
   .tooltip {
   position: absolute;
   margin-top: 4px;
