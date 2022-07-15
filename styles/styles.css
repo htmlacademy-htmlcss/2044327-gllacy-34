@@ -1634,15 +1634,37 @@ html {
     display: none;
 }
 
-/*.popover-close-button {
+.popover-close-button {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 72px;
-    height: 70px;
+    top: -44px;
+    right: 1px;
+    /*width: 115px;*/
+    height: 36px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    font: inherit;
+    gap: 6px;
+    align-items: center;
+    background: #ff4a78;
+    color: #fcfcfc;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
 }
-
-.popover-cart .popover-close-button {
+.popover-close-button svg {
+    fill: #fcfcfc;
+}
+.popover-close-button-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+.popover-search-button {
+    border-radius: 50%;
+    padding: 11px;
+}
+/*.popover-cart .popover-close-button {
     padding-left: 44px;
     background-image: url("images/cart-popover.svg");
     background-repeat: no-repeat;
