@@ -110,22 +110,18 @@
                 </a>
 
                 <div class="popover popover-cart">
-
-                  <!-- <button class="popover-close-button button button-light">
-                    2
-                    <span class="visually-hidden">Закрыть</span>
-                  </button> -->
-
                   <div class="popover-content">
                     <h2 class="popover-title">Корзина</h2>
 
                     <ul class="cart-items-list">
                       <li class="cart-item">
-                        <img src="/images/cart-item-image-1.png" alt="Малинка" width="">
-                        <p class="cart-item-title">Малинка</p>
-                        <p class="cart-item-description">1 кг х 310 ₽</p>
-                        <p class="cart-item-price">310 ₽</p>
-                        <button type="button" class="cart-item-button">
+                        <img class="cart-item-img" src="/images/cart-item-image-1.png" alt="Малинка" width="46" height="46">
+                        <div class="cart-item-wrapper">
+                          <p class="cart-item-title">Малинка</p>
+                          <p class="cart-item-description">1 кг х 310 ₽</p>
+                        </div>
+                          <p class="cart-item-price">310 ₽</p>
+                          <button type="button" class="cart-item-button">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
                           </svg>
@@ -133,11 +129,13 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <img src="/images/cart-item-image-2.png" alt="Малинка" width="">
-                        <p class="cart-item-title">Бабл-гам</p>
-                        <p class="cart-item-description">1,5 кг х 320 ₽</p>
-                        <p class="cart-item-price">480 ₽</p>
-                        <button type="button" class="cart-item-button">
+                        <img class="cart-item-img" src="/images/cart-item-image-2.png" alt="Бабл-гам" width="46" height="46">
+                        <div class="cart-item-wrapper">
+                          <p class="cart-item-title">Бабл-гам</p>
+                          <p class="cart-item-description">1,5 кг х 320 ₽</p>
+                        </div>
+                          <p class="cart-item-price">480 ₽</p>
+                          <button type="button" class="cart-item-button">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
                           </svg>
@@ -145,10 +143,17 @@
                         </button>
                       </li>
                     </ul>
-
+                    <div class="popover-cart-bottom-wrapper">
+                      <button class="button button-cart">Оформить заказ</button>
+                      <p class="cart-item-price total-price">
+                        Итого: 790 ₽
+                      </p>
+                    </div>
                   </div>
 
                 </div>
+
+
                 <div class="popover popover-cart-empty">
                   <!-- <button class="popover-close-button button button-light">
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="#2D3440">
