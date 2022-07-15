@@ -106,6 +106,7 @@ a {
 }
 .slider-image-arrow {
     fill: #FCFCFC;
+    padding: 8px;
 }
 
 .button {
@@ -801,7 +802,8 @@ html {
 }
 .slider-gallery-item {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    align-items: center;
 }
 
 /*.slider-container {
@@ -1003,9 +1005,11 @@ html {
     background-repeat: no-repeat;
     height: 30px;
 }
+.navigation-link-phone:hover {
+    color: #FF2F64;
+}
 
-
-.navigation-link:hover {
+.navigation-link:hover:not(.navigation-link-phone) {
     background: #FFCBD8;
     border-radius: 30px;
 }
@@ -1013,14 +1017,14 @@ html {
     background: #FCFCFC;
     border-radius: 30px;
 }*/
-.navigation-link:focus {
+.navigation-link:focus:not(.navigation-link-phone) {
     background: rgba(252, 252, 252, 0.5);
     border: 2px solid #2D3440;
     border-radius: 30px;
     color: #2D3440;
     outline: none;
 }
-.navigation-link:active {
+.navigation-link:active:not(.navigation-link-phone) {
     background: #FF4A78;
     color: #FCFCFC;
     border-radius: 30px;
@@ -1334,6 +1338,7 @@ html {
     position: absolute;
     top: 25px;
     z-index: -1;
+    left: -14px;
 }
 /*.slider-gallery-wrapper:nth-child(4) {
     margin-right: 40px;
@@ -1395,12 +1400,12 @@ html {
 }
 .slider-button {
     cursor: pointer;
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
     background: rgba(252, 252, 252, 0.3);
     border: 2px solid #FCFCFC;
     border-radius: 50%;
-    padding: 8px;
+    /*padding: 8px;*/
 }
 
 .slider-gallery-image-1 {
@@ -1415,13 +1420,13 @@ html {
 .slider-prev {
 
     position: relative;
-    left: 22px;
+    left: 50px;
     top: 3px;
     order: -1;
 }
 .slider-next {
     position: relative;
-    right: 20px;
+    right: 13px;
     top: 3px;
     /*margin-right: 16px;*/
 }
@@ -1918,19 +1923,21 @@ textarea {
     line-height: 16px;
     font-weight: 400;
     text-transform: none;
-    padding: 10px 8px 10px 15px;
+    padding: 10px 8px;
     /*display: block;*/
-    width: 170px;
+    width: 125px;
     position: absolute;
-    bottom: 100%;
+    bottom: 165%;
     margin-bottom: 6px;
-    left: 50%;
+    left: 15px;
     background: #FFFFFF;
     border: 1px solid #B9B9B9;
     border-radius: 4px;
     transform: translate(10%, 80%);
     z-index: 1;
     display: none;
+    min-height: 32px;
+
   }
 
 .tooltip-toggle:hover .tooltip-icon {
@@ -1992,10 +1999,10 @@ textarea {
   }*/
 .popover-catalog-menu {
     /*display: block;*/
-    width: 140px;
+    min-width: 156px;
     padding: 8px 16px;
     top: 100%;
-    left: 15%;
+    left: 10px;
     display: none;
 }
 
@@ -2027,7 +2034,8 @@ textarea {
     padding: 0;
 }
 .catalog-list-item {
-    margin-bottom: 12px;
+    padding: 8px;
+    /*margin-bottom: 12px;*/
 }
 /*.catalog-list-item:first-child {
     font-weight: 700;
@@ -2039,7 +2047,7 @@ textarea {
     color: #242424;
     border-bottom: 1px solid #B9B9B9;
     padding-bottom: 12px;
-    margin-top: 8px;
+    /*margin-top: 8px;*/
 
 }
 /*.catalog-list-item:last-child {
@@ -2260,5 +2268,43 @@ textarea {
 .button-cart:active, .auth-form-button:active {
     background: #FEAFC3;
     border: 2px solid #2D3440;
+    color: #FCFCFC;
+}
+.tooltip-text::before, .tooltip-text::after {
+    content: '';
+    position: absolute;
+    left: -21px;
+    bottom: 21px;
+    border: 10px solid transparent;
+    border-top: 10px solid #565C66;
+    transform: rotate(90deg);
+   }
+.tooltip-text::after {
+    border-top: 10px solid #fcfcfc;
+}
+.tooltip-text-date {
+    bottom: 12px;
+}
+.slider-gallery-wrapper:not(:first-child) {
+    margin-left: 37px;
+}
+/*.control-input[type="checkbox"]:checked + .control-mark:hover {
+    background-color: #e7e7e7;
+}*/
+/*.control-input[type="checkbox"]:checked:hover + .control-mark:hover {
+    background-color: #e7e7e7;
+}*/
+.control-input[type="checkbox"]:checked:hover + .control-mark {
+    background: url(../images/check-on-light.svg);
+
+}
+.catalog-list-item:hover {
+    background: #FFCBD8;
+}
+.catalog-list-item:active {
+    background: #FF7799;
+}
+.catalog-list-item-current {
+    background: #FF4A78;
     color: #FCFCFC;
 }
