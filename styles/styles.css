@@ -1608,6 +1608,8 @@ html {
     /*height: 350px;*/
     padding-bottom: 52px;
     display: none;
+    top: 100%;
+    margin-top: 8px;
 
 }
 .popover-search {
@@ -1616,6 +1618,7 @@ html {
     padding: 24px 16px;
     margin-top: 8px;
     display: none;
+    top: 100%;
 }
 
 .popover-cart {
