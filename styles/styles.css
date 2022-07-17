@@ -298,6 +298,9 @@ a {
 }
 .footer-menu-list {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: -12px;
 }
 .footer-copyright-text {
     font-weight: 400;
@@ -305,6 +308,7 @@ a {
     line-height: 16px;
     margin: 0;
     padding: 0;
+    padding-top: 5px;
 }
 .button-feedback, .button-send {
     background: #FF2F64;
@@ -456,6 +460,7 @@ a {
 .inner-header {
     width: 1170px;
     margin: 0 auto;
+    /*margin-top: 22px;*/
 }
 .inner-header-title {
     font-weight: 900;
@@ -508,6 +513,7 @@ a {
     display: flex;
     margin: 0 auto;
     padding: 0;
+    min-width: 356px;
 }
 html {
     height: 100%;
@@ -564,6 +570,9 @@ html {
 .footer-menu-container{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin-left: 78px;
+    margin-top: -4px;
 }
 .slider-pagination {
     display: flex;
@@ -593,7 +602,7 @@ html {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 54px;
     margin-bottom: 16px;
 }
 .banner-text  {
@@ -728,6 +737,7 @@ html {
 }
 .appointment-form-address {
     grid-column: 1 / -1;
+    margin-top: 5px;
 }
 .appointment-submit {
     outline: none;
@@ -735,6 +745,7 @@ html {
     color: #FCFCFC;
     grid-column: 1 / -1;
     justify-self: center;
+    margin-top: 14px;
 }
 .feedback-submit {
     outline: none;
@@ -1578,6 +1589,8 @@ textarea {
     font-size: 14px;
     line-height: 20px;
     color: #242424;
+    margin-left: 2px;
+    margin-top: 2px;
 }
 .catalog-filter-item li:not(:last-child) {
     margin-right: 16px;
@@ -1633,6 +1646,7 @@ textarea {
     border: none;
     margin: 0;
     padding: 0;
+    margin-top: -3px;
 }
 .sorting-options {
     width: 196px;
@@ -1671,16 +1685,17 @@ textarea {
     margin-top: 10px;
     border-radius: 2px;
     background-color: rgb(86, 92, 102, 0.3);
-    top: -30px;
+    top: -25px;
+    left: 2px;
     margin-bottom: 10px;
-    width: 164px;
+    width: 184px;
     align-self: center;
 }
 .range-bar {
     position: absolute;
     height: 2px;
     background-color: #565C66;
-    width: 56px;
+    width: 66px;
     left: 40px;
 }
 .range-toggle {
@@ -1733,6 +1748,7 @@ textarea {
     border: none;
     appearance: textfield;
     color: #2d3440;
+    margin-left: -6px;
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1819,6 +1835,7 @@ textarea {
 .catalog-sort-wrapper {
     width: 1170px;
     margin: 0 auto;
+    margin-top: 47px;
 }
 .navigation-user .navigation-item {
     margin-left: 16px;
@@ -1827,4 +1844,8 @@ textarea {
     margin: 0;
     margin-top: -3px;
     margin-bottom: 32px;
+}
+.promo-image {
+    display: block;
+    margin-left: -10px;
 }
